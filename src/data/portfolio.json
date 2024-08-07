@@ -1,0 +1,130 @@
+{
+  "profile": {
+    "name": "Neeraj Walia",
+    "image": "https://via.placeholder.com/400x400",
+    "email": "neeraj2106@gmail.com",
+    "linkedIn": "https://www.linkedin.com/in/neerajwalia"
+  },
+  "intro": {
+    "title": "Hey! I'm Neeraj Walia, a full stack developer.",
+    "subIntro": "Ready to bring your dream product to life in the virtual world."
+  },
+  "aboutMe": {
+    "content": "I'm your go-to Full Stack Developer, ready to bring your dream product to life in the virtual world. From crafting sleek websites for small and medium-sized businesses to empowering you by building your dream tech product, I've got the skills and expertise to make it happen. With a mastery of JavaScript, React.js, Node.js, express.js, CSS and Next.js, I can help ensure your online presence stands out from the crowd. I am skilled in creating user-friendly interfaces, building RESTful APIs, and seamlessly integrating external services. Besides, I am a technical lead/project manager, who prefers to meticulously oversee every aspect of a project, from conception to completion, leaving no room for mediocrity. Your dream + my expertise = scalable, performant, reliable, and intuitive products. Let's build something extraordinary! Beyond the code, I step into the shoes of a technical lead and project manager, where I bring a meticulous approach to overseeing every stage of a project. My commitment to excellence leaves no room for mediocrity, ensuring that each endeavor I embark upon is a success. In the collaborative realm, I thrive. Whether it's solving intricate technical challenges or leading a team towards a shared goal, I believe that extraordinary results are born out of effective collaboration."
+  },
+  "experiences": [
+    {
+      "image": "https://via.placeholder.com/40x40/FFDD00/000000",
+      "company": "Yellow.ai",
+      "designation": "Technical Lead",
+      "location": "Bangalore, India",
+      "timeline": "2017 - Present",
+      "description": "I step into the shoes of a technical lead and project manager, where I bring a meticulous approach to overseeing every stage of a project. My commitment to excellence leaves no room for mediocrity, ensuring that each endeavor I embark upon is a success."
+    },
+    {
+      "image": "https://via.placeholder.com/40x40/000000/FFFFFF",
+      "company": "Company 1",
+      "designation": "Software Engineer",
+      "location": "Bangalore, India",
+      "timeline": "2015 - 2017",
+      "description": "Worked on various projects involving web development and API integration."
+    },
+    {
+      "image": "https://via.placeholder.com/40x40/CCCCCC/000000",
+      "company": "Company 2",
+      "designation": "Junior Developer",
+      "location": "Bangalore, India",
+      "timeline": "2013 - 2015",
+      "description": "Assisted in the development of web applications and provided support for existing systems."
+    },
+    {
+      "image": "https://via.placeholder.com/40x40/888888/FFFFFF",
+      "company": "Company 3",
+      "designation": "Intern",
+      "location": "Delhi, India",
+      "timeline": "2012 - 2013",
+      "description": "Gained hands-on experience in software development, participated in team meetings, and supported senior developers in various tasks."
+    }
+  ],
+  "skills": [
+    {
+      "title": "Skillsets",
+      "description": "I find my joy in the art and science of Full Stack Development, specializing in technologies such as",
+      "richTextInput": "<ul><li>Full Stack Development</li><li>API Development</li><li>UI/UX Design</li><li>Project Management</li><li>Quality Assurance</li><li>Rest API</li><li>Product Architecture</li></ul>"
+    },
+    {
+      "title": "Stack",
+      "description": "My go to toolkit and the tech I have grasped includes,",
+      "richTextInput": "<ul><li>JavaScript</li><li>React.js</li><li>Node.js</li><li>Express.js</li><li>CSS</li><li>Next.js</li></ul>"
+    }
+  ],
+  "projects": [
+    {
+      "image": "path/to/github-logo.png",
+      "title": "Scientific react calculator",
+      "link": "github.com",
+      "description": "A calculator based for calculation of complex scientific numericals..."
+    },
+    {
+      "image": "path/to/appstore-logo.png",
+      "title": "Time tracker - taskify",
+      "link": "apple.appstore",
+      "description": "Get your all tasks centralized with all in one integral task and calendar manage..."
+    },
+    {
+      "image": "path/to/googleplay-logo.png",
+      "title": "Performance management",
+      "link": "app.google.com",
+      "description": ""
+    },
+    {
+      "image": "path/to/github-logo.png",
+      "title": "Path tracker - Dijkstra",
+      "link": "github.com",
+      "description": ""
+    },
+    {
+      "image": "path/to/udemy-logo.png",
+      "title": "LMS - Data structures",
+      "link": "udemy.com",
+      "description": ""
+    },
+    {
+      "image": "path/to/profile-image.png",
+      "title": "Checkout all my projects here",
+      "link": "github.com/niraj",
+      "description": ""
+    }
+  ],
+  "blogs": [
+    {
+      "image": "https://s3-alpha-sig.figma.com/img/4f81/0eaf/2ae9ce18c31227eb94438008da66762d?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KNZZ3SiIlW9Gbx2VhOhCoqpb-Oq8tSpC~hP~UMKYEK0WWLIJrb6yhiq5uVSCElvEhHd0wqPL5wnLzfE7xJi~ch17CKQDRDeqgiv4AZw8Q2aSHxuy9rj3r4hRLfHsX19zfk-gDHZ7bFd1bIpP9c2s4WDkWzxULyS-KfRFzFVPv-6MjEzqkBrj4WY8Oqr2cLvTQc5U2pzbafz3kNP~TT~qNS8NiFfFOXJ~PI~qoAGoq3-DUQ~UoD3wA~y9Vqv1dhS6JLoleCAB~innx1e9ioxveP3TQFvqsCfw77kZj1N0kKktDvH5ImpFID2IeWDKjv6cq8dCcMGjxMv3-Kq70hZ4kg__",
+      "title": "How to effectively crack leet code test cases with 100% accuracy",
+      "link": "medium.com"
+    },
+    {
+      "image": "https://cdn.worldvectorlogo.com/logos/react-1.svg",
+      "title": "Best react component library for beginners and experts",
+      "link": "react.com/components"
+    },
+    {
+      "image": "https://s3-alpha-sig.figma.com/img/4f81/0eaf/2ae9ce18c31227eb94438008da66762d?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KNZZ3SiIlW9Gbx2VhOhCoqpb-Oq8tSpC~hP~UMKYEK0WWLIJrb6yhiq5uVSCElvEhHd0wqPL5wnLzfE7xJi~ch17CKQDRDeqgiv4AZw8Q2aSHxuy9rj3r4hRLfHsX19zfk-gDHZ7bFd1bIpP9c2s4WDkWzxULyS-KfRFzFVPv-6MjEzqkBrj4WY8Oqr2cLvTQc5U2pzbafz3kNP~TT~qNS8NiFfFOXJ~PI~qoAGoq3-DUQ~UoD3wA~y9Vqv1dhS6JLoleCAB~innx1e9ioxveP3TQFvqsCfw77kZj1N0kKktDvH5ImpFID2IeWDKjv6cq8dCcMGjxMv3-Kq70hZ4kg__",
+      "title": "Time and space complexity? how to code more effectively",
+      "link": "medium.com"
+    },
+    {
+      "image": "https://s3-alpha-sig.figma.com/img/4f81/0eaf/2ae9ce18c31227eb94438008da66762d?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KNZZ3SiIlW9Gbx2VhOhCoqpb-Oq8tSpC~hP~UMKYEK0WWLIJrb6yhiq5uVSCElvEhHd0wqPL5wnLzfE7xJi~ch17CKQDRDeqgiv4AZw8Q2aSHxuy9rj3r4hRLfHsX19zfk-gDHZ7bFd1bIpP9c2s4WDkWzxULyS-KfRFzFVPv-6MjEzqkBrj4WY8Oqr2cLvTQc5U2pzbafz3kNP~TT~qNS8NiFfFOXJ~PI~qoAGoq3-DUQ~UoD3wA~y9Vqv1dhS6JLoleCAB~innx1e9ioxveP3TQFvqsCfw77kZj1N0kKktDvH5ImpFID2IeWDKjv6cq8dCcMGjxMv3-Kq70hZ4kg__",
+      "title": "Free table UI toolkit for your next react project",
+      "link": "github.com"
+    }
+  ],
+  "connect": {
+    "title": "Lets Connect!",
+    "description": "Nothing's better than a 1:1 chat. Lets connect and build some epic products together :)",
+    "platform": {
+      "name": "Cal.com",
+      "logo": "path/to/calcom-logo.png",
+      "link": "https://cal.com"
+    }
+  }
+}

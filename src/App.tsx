@@ -1,46 +1,51 @@
-import { Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "@mui/material/styles";
 import NavigationBar from "./components/NavigationBar";
-import ProfileSection from "./components/ProfileSection";
-import IntroSection from "./components/IntroSection";
-import ExperienceSection from "./components/ExperienceSection";
+import ProfileSection from "./sections/ProfileSection";
+import IntroSection from "./sections/IntroSection";
+import ExperienceBar from "./components/ExperienceBar";
+import AboutMeSection from "./sections/AboutMeSection";
+import SkillsSection from "./sections/SkillsSection";
+import ProjectsSection from "./sections/ProjectsSection";
+import ExperiencesSection from "./sections/ExperiencesSection";
+import BlogsSection from "./sections/BlogsSection";
+import ConnectSection from "./sections/ConnectSection";
+import ScrollToTopButton from "./components/ScrollToTopButton";
+import { Box, Container } from "@mui/material";
+import theme from "./theme/theme";
+import portfolioData from "./data/portfolio.json";
 
 const App = () => {
-  const appStyle = {
-    maxWidth: "1200px",
-    margin: "0 auto",
-    padding: "20px",
-    backgroundColor: "#F9F9F9",
-    minHeight: "100vh",
-  };
-
-  const mainContentStyle = {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "flex-start",
-  };
+  const { aboutMe, skills, projects, experiences, blogs, connect } =
+    portfolioData;
 
   return (
-    <div style={appStyle}>
+    <ThemeProvider theme={theme}>
       <NavigationBar />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <main>
-              <div style={mainContentStyle}>
-                <ProfileSection />
-                <IntroSection />
-              </div>
-              <ExperienceSection />
-            </main>
-          }
-        />
-        <Route path="/work" element={<div>Work Page</div>} />
-        <Route path="/projects" element={<div>Projects Page</div>} />
-        <Route path="/about" element={<div>About Page</div>} />
-        <Route path="/resume" element={<div>Resume Page</div>} />
-      </Routes>
-    </div>
+      <Container sx={{ maxWidth: "100%" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "flex-start",
+            justifyContent: "space-between",
+            marginTop: "5em",
+          }}
+        >
+          <ProfileSection />
+          <IntroSection />
+        </Box>
+        <ExperienceBar />
+        <Box sx={{ margin: "10% 5% 10% 35%", width: "60%" }}>
+          <AboutMeSection content={aboutMe.content} />
+          <SkillsSection skills={skills} />
+          <ProjectsSection projects={projects} />
+          <ExperiencesSection experiences={experiences} />
+          <BlogsSection blogs={blogs} />
+          <ConnectSection connect={connect} />
+        </Box>
+      </Container>
+      <ScrollToTopButton />
+    </ThemeProvider>
   );
 };
 
