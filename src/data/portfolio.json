@@ -1,12 +1,12 @@
 {
   "profile": {
-    "name": "Neeraj Walia",
+    "name": "Akhil Alampally",
     "image": "https://via.placeholder.com/400x400",
     "email": "neeraj2106@gmail.com",
     "linkedIn": "https://www.linkedin.com/in/neerajwalia"
   },
   "intro": {
-    "title": "Hey! I'm Neeraj Walia, a full stack developer.",
+    "title": "Hey! I'm Akhil Alampally, a React Dev.",
     "subIntro": "Ready to bring your dream product to life in the virtual world."
   },
   "aboutMe": {
@@ -15,7 +15,7 @@
   "experiences": [
     {
       "image": "https://via.placeholder.com/40x40/FFDD00/000000",
-      "company": "Yellow.ai",
+      "company": "Soul.ai",
       "designation": "Technical Lead",
       "location": "Bangalore, India",
       "timeline": "2017 - Present",

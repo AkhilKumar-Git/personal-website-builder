@@ -1,11 +1,34 @@
+import { useEffect, useState } from "react";
 import { Box, Avatar, Typography, IconButton } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CloseIcon from "@mui/icons-material/Close";
 
-const ProfileSection = () => {
-  const name = "Neeraj Walia";
-  const image = "https://via.placeholder.com/400x400";
-  const email = "neeraj2106@gmail.com";
+interface Profile {
+  name: string;
+  image: string;
+  email: string;
+  linkedIn: string;
+}
+
+interface ProfileProps {
+  profileObject: Profile;
+}
+
+const ProfileSection = ({ profileObject }: ProfileProps) => {
+  const [profile, setProfile] = useState<Profile>(profileObject);
+
+  useEffect(() => {
+    fetch("/")
+      .then((response) => response.json())
+      .then((data: Profile) => {
+        setProfile(data);
+      })
+      .catch((error) => console.error("Error fetching profile data:", error));
+  }, []);
+
+  if (!profile) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <Box
@@ -17,8 +40,8 @@ const ProfileSection = () => {
       }}
     >
       <Avatar
-        alt={name}
-        src={image}
+        alt={profile.name}
+        src={profile.image}
         sx={{
           width: 295,
           height: 295,
@@ -38,9 +61,9 @@ const ProfileSection = () => {
         }}
       >
         <Box sx={{ display: "flex", flexDirection: "column" }}>
-          <Typography variant="h6">{name}</Typography>
+          <Typography variant="h6">{profile.name}</Typography>
           <Typography sx={{ fontSize: "14px", color: "#666" }}>
-            {email}
+            {profile.email}
           </Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -64,6 +87,7 @@ const ProfileSection = () => {
               backgroundColor: "#0077b5",
               color: "#fff",
             }}
+            onClick={() => window.open(profile.linkedIn, "_blank")}
           >
             <LinkedInIcon />
           </IconButton>

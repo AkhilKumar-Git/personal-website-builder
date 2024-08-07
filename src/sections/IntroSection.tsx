@@ -1,12 +1,30 @@
+import { useEffect, useState } from "react";
 import { Box, Typography } from "@mui/material";
 
-// interface Props {
-//   isEditing: boolean;
-// }
+interface IntroData {
+  title: string;
+  subIntro: string;
+}
 
-const IntroSection = () => {
-  const subIntro =
-    "Ready to bring your dream product to life in the virtual world.";
+interface IntroObjectProps {
+  intro: IntroData;
+}
+
+const IntroSection = ({ intro }: IntroObjectProps) => {
+  const [introData, setIntroData] = useState(intro);
+
+  useEffect(() => {
+    fetch("/")
+      .then((response) => response.json())
+      .then((data: IntroData) => {
+        setIntroData(data);
+      })
+      .catch((error) => console.error("Error fetching intro data:", error));
+  }, []);
+
+  if (!introData) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <Box
@@ -22,9 +40,7 @@ const IntroSection = () => {
           fontWeight: "500",
         }}
       >
-        Hey! <br />
-        I'm <span style={{ color: "black" }}>Neeraj Walia</span>, <br />a full
-        stack developer.
+        {intro.title}.
       </Typography>
       <Typography
         sx={{
@@ -33,7 +49,7 @@ const IntroSection = () => {
           marginTop: "1rem",
         }}
       >
-        {subIntro}
+        {intro.subIntro}
       </Typography>
     </Box>
   );
